@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <title>Aung's Projects</title>
+    <link rel="icon" href="/images/cat.jpg" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
 
   <body>
@@ -14,52 +23,61 @@
     </nav>
 
     <header>
-      <h1>Projects</h1>
+      <h1><em>Projects</em></h1>
     </header>
-
+    <aside>
+      <p>Here are my list of projects!</p>
+    </aside>
     <hr />
-
     <section>
-      <h3>CSE 110's AmongSus Website</h3>
-      <p>
-        <strong>
-          4th Year First Generation Computer Science Major from Burma seeking an
-          internship in the Tech Industry
-        </strong>
-      </p>
+      <h2>Project List</h2>
+      <table>
+        <caption>
+          List of my projects
+        </caption>
+        <colgroup>
+          <col />
+          <col style="background-color: yellow" />
+        </colgroup>
+        <tr>
+          <th>Projects</th>
+          <th>Links</th>
+        </tr>
+        <tr>
+          <td>CSE110 AmongSus Project</td>
+          <td>
+            <a
+              href="https://github.com/cse110-fa22-group23/cse110-fa22-group23"
+            >
+              AmongSus
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>COGS108 Datascience Project</td>
+          <td>
+            <a href="https://github.com/COGS108/Group_006-Fa22">
+              Datascience
+            </a>
+          </td>
+        </tr>
+      </table>
     </section>
 
     <hr />
-
     <div>
-      <h2>Work Experience</h2>
-      <h3>NeuroLeap Backend Web Developer</h3>
-      <p>JANUARY 2023 -- PRESENT</p>
-      <ul>
-        <li>
-          Built a testing framework for testing all backend routes to ensure its
-          overall functionality after any changes has been made using jest,
-          supertest and mock database.
-        </li>
-        <li>
-          Improved existing search routes for backend routes to include the
-          filtering of multiple keywords and categories saved in the backend.
-        </li>
-      </ul>
+      <picture>
+        <source
+          srcset="/media/cc0-images/surfer-240-200.jpg"
+          media="(orientation: portrait)"
+        />
+        <img src="/images/random.jpg" alt="" />
+      </picture>
+      <details>
+        <summary>Details</summary>
+        Random Image
+      </details>
     </div>
-
-    <hr />
-
-    <main>
-      <h2>Education</h2>
-      <h3>UC San Diego BS in Computer Science</h3>
-      <p>September 2023 to Present</p>
-      <p>GPA: 3.78</p>
-      <h3>Ohlone College Transfer Student</h3>
-      <p>JANUARY 2019 to May 2021</p>
-      <p>GPA: 3.95</p>
-    </main>
-
     <footer>
       <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
